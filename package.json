@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "start": "vite",
+    "start": "vite --mode dev",
     "build": "run-p type-check \"build-only {@}\" --",
     "preview": "vite preview",
     "test:unit": "vitest",
@@ -22,6 +22,7 @@
     "build:skills": "cat .github/skills/**/*.md > .github/copilot-instructions.md"
   },
   "dependencies": {
+    "@azure/msal-browser": "^5.14.0",
     "@vueuse/core": "^14.3.0",
     "pinia": "^3.0.4",
     "vee-validate": "^4.15.1",
